@@ -12,4 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require jquery.lazyload.min
+
+$(document).ready(function() {
+  $("img.lazy").lazyload({ 
+      effect : "fadeIn"
+  });
+});

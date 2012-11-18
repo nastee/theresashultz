@@ -1,13 +1,60 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
  *= require_self
  *= require_tree .
  */
+
+/* ----- IMPORTS ------ */
+@import url(http://fonts.googleapis.com/css?family=Average+Sans);
+@import url(http://fonts.googleapis.com/css?family=Combo);
+
+body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-image: url(https://theresashultz.s3.amazonaws.com/cat_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+html, body {
+	padding: 0;
+	margin: 0.5em 0 1.5em 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+}
+
+h1, h2 {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 5em;
+	letter-spacing: -0.025em;
+	margin-left: -0.05em;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+h1.cats {
+  font-family: 'Average Sans', sans-serif;
+  font-size: 100px;
+}
+
+h1.catz {
+  font-family: 'Combo', cursive;
+  font-size: 150px;
+}
+
+p {
+	display: inline;
+}
+
+img {
+	vertical-align: text-top;
+	margin: 0 3em 3em 0;
+	border: 0;
+}
