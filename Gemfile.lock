@@ -133,6 +133,7 @@ PLATFORMS
 DEPENDENCIES
   aws-s3
   coffee-rails
+  haml
   haml-rails
   heroku
   jquery-rails
