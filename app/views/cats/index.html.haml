@@ -1,3 +1,21 @@
 %h1.catz CATS
-- @images.each do |url|
-  %p= image_tag url, :class => 'lazy'
+#cats
+  -# - @images.each do |url|
+  -#   %p= image_tag url, :class => 'lazy'
+
+:javascript
+  $(document).ready(function() {
+    $.ajax({
+      type: 'GET',
+      async: true,
+      url: '/cats.json',
+      success: function(data) {
+        console.log('CATS.JSON - SUCCESS');
+        $.each(data, function(ndx, value) {
+          var html = '<p><img class="lazy" src="' + value +'" /></p>';
+          $('#cats').append(html);
+          console.log(ndx);
+        });
+      }
+    })
+  });

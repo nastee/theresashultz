@@ -1,8 +1,8 @@
 class CatsController < ApplicationController
+  respond_to :html, :xml, :json, :js
+  
   def index
-    bucket  = AWS::S3::Bucket.find(THERESA_SHULTZ_BUCKET)
-    @images = bucket.objects.collect { |object| 
-      AWS::S3::S3Object.url_for(object.key, THERESA_SHULTZ_BUCKET, authenticated: false) }.reject { |x| x.include?('background') || x.include?('folder') 
-    }
+    @images = (1..(AWS::S3::Bucket.find(THERESA_SHULTZ_BUCKET).objects.count - 2)).collect { |num| "http://s3.amazonaws.com/theresashultz/cats/#{num}.gif"}.reverse
+    respond_with(@images)
   end
 end
