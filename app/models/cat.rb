@@ -5,6 +5,10 @@ require 'aws/s3'
 class Cat < ActiveRecord::Base
   attr_accessible :file_name, :original_url, :url
   
+  def http
+    url
+  end
+  
   def self.build! options={}
     # Error check 
     return false if Cat.exists?(original_url: options[:url])

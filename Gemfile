@@ -20,6 +20,10 @@ group :assets do
 end
 
 group :development, :test do
+  gem 'vcr'
+  gem 'mocha'
+  gem 'webmock'
+  gem 'simplecov'
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'rspec-mocks'
