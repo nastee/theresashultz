@@ -1,3 +1,9 @@
+#container.masonry
+  = render :partial => 'cat', :collection => @cats
+%nav#page-nav
+  %a{:href => "/?page=#{params[:page].nil? ? 2 : params[:page].to_i + 1}"} next
+
+
 -# %h1.catz CATS
 -# #cats
 -#   -# - @images.each do |url|
