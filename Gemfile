@@ -5,6 +5,9 @@ gem 'pg'
 gem 'haml'
 gem 'aws-s3'
 gem 'heroku'
+gem 'kaminari'
+gem 'friendly_id'
+gem 'will_paginate'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -16,6 +19,9 @@ group :assets do
   gem 'uglifier'
 end
 
-group :development do
+group :development, :test do
   gem 'sqlite3'
+  gem 'rspec-rails'
+  gem 'rspec-mocks'
+  gem 'factory_girl_rails'
 end

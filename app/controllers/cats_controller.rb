@@ -2,7 +2,7 @@ class CatsController < ApplicationController
   respond_to :html, :xml, :json, :js
   
   def index
-    @images = (1..(AWS::S3::Bucket.find(THERESA_SHULTZ_BUCKET).objects.count - 2)).collect { |num| "http://s3.amazonaws.com/theresashultz/cats/#{num}.gif"}.reverse
-    respond_with(@images)
+    # @cats = Cat.paginate(page: params[:page], per_page: 25)
+    # respond_with(@cats)
   end
 end

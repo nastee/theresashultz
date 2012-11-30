@@ -1,7 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+# Import the intial cats
+@s3_cats = (1..(AWS::S3::Bucket.find(THERESA_SHULTZ_BUCKET).objects.count - 2)).collect { |num| 
+  "http://s3.amazonaws.com/theresashultz/cats/#{num}.gif"
+}
+
+@s3_cats.each do |cat_url|
+  
+end
