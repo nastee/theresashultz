@@ -1,5 +1,4 @@
 Theresashultz::Application.routes.draw do
-
-  resources :cats, :home
+  resources :cats
   root to: 'cats#index'
 end
