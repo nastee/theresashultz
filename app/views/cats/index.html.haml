@@ -3,3 +3,8 @@
   = render :partial => 'cat', :collection => @cats
 %nav#page-nav
   %a{:href => "/?page=#{params[:page].nil? ? 2 : params[:page].to_i + 1}"} next
+  
+:javascript
+  $(document).ready(function() {
+    tshultz.initialize_cats_infinite_scroll();
+  });

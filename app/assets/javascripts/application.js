@@ -17,14 +17,16 @@
 // = require manual-trigger
 // = require facebox
 
-$(document).ready(function() {
-  $("img.item").lazyload({ 
-      effect : "fadeIn"
-  });
-  
-  // Setup click handlers for facebook rels
-  $('a[rel*=facebox]').facebox();
+/**
+ * Top level namespace for Jasmine, a lightweight JavaScript BDD/spec/testing framework.
+ *
+ * @namespace
+ */
+var tshultz = {};
+var isCommonJS = typeof window == "undefined";
+if (isCommonJS) exports.tshultz = tshultz;
 
+tshultz.initialize_cats_infinite_scroll = function() {
   // Access the single container across all jquery
   var $container = $('#container');
 
@@ -51,7 +53,6 @@ $(document).ready(function() {
 
     // trigger Masonry as a callback
     function(newElements) {
-      console.log('starting')
       var $newElems = $(newElements).css({opacity: 0});
       $newElems.imagesLoaded(function(){
         $newElems.animate({ opacity: 1 });
@@ -61,4 +62,13 @@ $(document).ready(function() {
       });
     }
   );
+};
+
+$(document).ready(function() {
+  $("img.item").lazyload({ 
+      effect : "fadeIn"
+  });
+  
+  // Setup click handlers for facebook rels
+  $('a[rel*=facebox]').facebox();
 });
