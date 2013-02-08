@@ -62,7 +62,7 @@ container {
 	-webkit-animation-timing-function: ease;
 	-webkit-animation-iteration-count: 1;	
 	-webkit-animation-direction: normal;
-	-webkit-animation-delay: 0s;
+	-webkit-animation-delay: 5s;
 	-webkit-animation-play-state: running;
 	-webkit-animation-fill-mode: forwards;
 
