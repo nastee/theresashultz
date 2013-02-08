@@ -24,13 +24,12 @@
 /**
  * Instantiate Davis.js
  */
-var app = Davis(function () {
-  this.get('/welcome/:name', function (req) {
-    alert("Hello " + req.params['name'])
-  });
-});
-
-app.start();
+// var app = Davis(function () {
+//   this.get('/#index', function (req) {
+//   });
+// });
+// 
+// app.start();
 
 /**
  * Top level namespace for Jasmine, a lightweight JavaScript BDD/spec/testing framework.
