@@ -38,15 +38,11 @@ container {
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 }
 
-/*.preload * {
+.preload * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
   -ms-transition: none !important;
   -o-transition: none !important;
-}*/
-
-#beaverhop {
-	background-image: url(beaver.gif);
 }
 
 #beaver {
@@ -66,34 +62,34 @@ container {
 	-webkit-animation-timing-function: ease;
 	-webkit-animation-iteration-count: 1;	
 	-webkit-animation-direction: normal;
-	-webkit-animation-delay: 5s;
+	-webkit-animation-delay: 0s;
 	-webkit-animation-play-state: running;
 	-webkit-animation-fill-mode: forwards;
 
 	-moz-animation-name: beaverhop;
-	-moz-animation-duration: 10s;
+	-moz-animation-duration: 3s;
 	-moz-animation-timing-function: ease;
 	-moz-animation-iteration-count: 1;	
 	-moz-animation-direction: normal;
-	-moz-animation-delay: 0;
+	-moz-animation-delay: 5s;
 	-moz-animation-play-state: running;
 	-moz-animation-fill-mode: forwards;
 	
 	-ms-animation-name: beaverhop;
-	-ms-animation-duration: 10s;
+	-ms-animation-duration: 3s;
 	-ms-animation-timing-function: ease;
 	-ms-animation-iteration-count: 1;	
 	-ms-animation-direction: normal;
-	-ms-animation-delay: 0;
+	-ms-animation-delay: 5s;
 	-ms-animation-play-state: running;
 	-ms-animation-fill-mode: forwards;
 	
 	animation-name: beaverhop;
-	animation-duration: 10s;
+	animation-duration: 3s;
 	animation-timing-function: ease;
 	animation-iteration-count: 1;	
 	animation-direction: normal;
-	animation-delay: 0;
+	animation-delay: 5s;
 	animation-play-state: running;
 	animation-fill-mode: forwards;
 }
@@ -106,6 +102,11 @@ container {
 	}
 	
 	5% {
+		bottom: 85px;
+		left: 25px;
+	}
+	
+	6% {
 		bottom: 75px;
 		left: 25px;
 	}
@@ -124,32 +125,15 @@ container {
 		bottom: 75px;
 		left: 25px;
 	}
+	
+	97%{
+		bottom: 85px;
+		left: 25px;
+	}
 
 	100% {
 		bottom: 0;
 		left: 25px;
 		animation-timing-function: ease-out;
 	}
-	
-/*	33% {
-		bottom: 340px;
-		left: 340px;
-		background: #ffd630;
-	}
-
-	66% {
-		bottom: 340px;
-		left: 40px;		
-		background: #ffd630;
-	}
-
-	100% {
-		bottom: 0;
-		left: 40px;
-		background: #f00;
-	}*/
-
 }
-
-
-

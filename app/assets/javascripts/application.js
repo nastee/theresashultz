@@ -70,9 +70,9 @@ tshultz.initialize_cats_infinite_scroll = function() {
 
 $(document).ready(function() {
 	// Remove the pre load
-	// $("window").load(function() {
-	//   $("body").removeClass("preload");
-	// });
+	$("window").load(function() {
+	  $("body").removeClass("preload");
+	});
 	
 	// Lazy load the images
   $("img.item").lazyload({ 
