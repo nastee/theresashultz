@@ -19,10 +19,23 @@
 // = require manual-trigger
 // = require davis.min
 // = require facebox
+// = require blur
+
+/**
+ * Instantiate Davis.js
+ */
+var app = Davis(function () {
+  this.get('/welcome/:name', function (req) {
+    alert("Hello " + req.params['name'])
+  });
+});
+
+app.start();
 
 /**
  * Top level namespace for Jasmine, a lightweight JavaScript BDD/spec/testing framework.
  * Using https://github.com/jschr/textillate for js text animations
+ * Using http://blurjs.com/ for blurjs
  *
  * @namespace
  */
