@@ -14,11 +14,14 @@
 // = require jquery.masonry.min
 // = require jquery.infinitescroll.min
 // = require jquery.lazyload.min
+// = require jquery.lettering
+// = require jquery.textillate
 // = require manual-trigger
 // = require facebox
 
 /**
  * Top level namespace for Jasmine, a lightweight JavaScript BDD/spec/testing framework.
+ * Using https://github.com/jschr/textillate for js text animations
  *
  * @namespace
  */
@@ -64,11 +67,26 @@ tshultz.initialize_cats_infinite_scroll = function() {
   );
 };
 
+
 $(document).ready(function() {
+	// Remove the pre load
+	// $("window").load(function() {
+	//   $("body").removeClass("preload");
+	// });
+	
+	// Lazy load the images
   $("img.item").lazyload({ 
       effect : "fadeIn"
   });
   
   // Setup click handlers for facebook rels
   $('a[rel*=facebox]').facebox();
+
+	// Textillate the h1 text
+	$('h1.theresa').textillate({ 
+		in: { effect: 'fadeInDown' } 
+	});
+	
+	// Fade in gravatar
+	$('#gravatar').delay(1000).fadeIn(400);
 });
