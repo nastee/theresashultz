@@ -88,5 +88,5 @@ $(document).ready(function() {
 	});
 	
 	// Fade in gravatar
-	$('#gravatar').delay(1000).fadeIn(400);
+	$('#gravatar').delay(1000).fadeIn(1000);
 });
