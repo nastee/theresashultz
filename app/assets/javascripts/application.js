@@ -17,6 +17,7 @@
 // = require jquery.lettering
 // = require jquery.textillate
 // = require manual-trigger
+// = require davis.min
 // = require facebox
 
 /**
