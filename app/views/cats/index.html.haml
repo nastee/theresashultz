@@ -4,6 +4,12 @@
 %nav#page-nav
   %a{:href => "/?page=#{params[:page].nil? ? 2 : params[:page].to_i + 1}"} next
   
+  
+  / %img{src: 'http://www.gravatar.com/avatar/8cbf876c28fcb4cfd9f4565ae7e49bba.jpg?s=80', class: 'circle', id: 'gravatar', style: 'display:none;'}
+  
+  / #beaver.animate
+  /   %img{src: 'assets/cat.png', width: '100px', height: '100px'}
+  
 :javascript
   $(document).ready(function() {
     tshultz.initialize_cats_infinite_scroll();

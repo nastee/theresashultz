@@ -2,23 +2,91 @@
 @import url(http://fonts.googleapis.com/css?family=Sacramento);
 
 body {
-	background-image: url(shl.png);
-	background-repeat: repeat;
-	text-align: center;
+  background-image: url(shl.png);
+  background-repeat: repeat;
+  text-align: center;
 }
 
 h1.theresa {
-	margin: 50px 0px 0px 0px;
-	font-family: 'Sacramento', cursive;
-	font-size: 80px;
+  margin: 30px 0px 0px 0px;
+  font-family: 'Sacramento', cursive;
+  font-size: 80px;
+  text-align: center;
 }
 
-container {
-	margin: 0 auto;
+#container {
   width: 600px;
+  margin: 0 auto;
 }
 
-.circle {
+#img1 {
+}
+
+img {
+  float: left;
+}
+
+.img_down {
+  padding-top: 25%;
+  margin-top: 25px;
+}
+
+/*#main {
+  text-align: center;
+}
+
+#container1 {
+  width: 525px;
+}
+#container2 {
+  width: 650px;
+}
+
+#box1 {
+  float:left;
+  height: 300px;
+}
+#box2 {
+  
+}
+#box3 {
+  width: 285px;
+  float:left;
+}
+#box4 {
+  
+}
+
+#img1 {
+  padding-top: 25%;
+}
+#img2 {
+  
+}
+#img3 {
+  float:right;
+}
+#img4 {
+  float:left;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.circle {
   display: block;
   width: 80px;
   height: 80px;
@@ -41,94 +109,94 @@ container {
 }
 
 #beaver {
-	width: 130px;
-	height: 130px;
-	position: absolute;
-	border-radius: 70px;
-	z-index: 4;
-	margin-bottom: -130px;
-	bottom: -130px;
-	left: 340px;
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  border-radius: 70px;
+  z-index: 4;
+  margin-bottom: -130px;
+  bottom: -130px;
+  left: 340px;
 }
 
 #beaver.animate {
-	-webkit-animation-name: beaverhop;
-	-webkit-animation-duration: 3s;
-	-webkit-animation-timing-function: ease;
-	-webkit-animation-iteration-count: 1;	
-	-webkit-animation-direction: normal;
-	-webkit-animation-delay: 5s;
-	-webkit-animation-play-state: running;
-	-webkit-animation-fill-mode: forwards;
+  -webkit-animation-name: beaverhop;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-iteration-count: 1; 
+  -webkit-animation-direction: normal;
+  -webkit-animation-delay: 5s;
+  -webkit-animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
 
-	-moz-animation-name: beaverhop;
-	-moz-animation-duration: 3s;
-	-moz-animation-timing-function: ease;
-	-moz-animation-iteration-count: 1;	
-	-moz-animation-direction: normal;
-	-moz-animation-delay: 5s;
-	-moz-animation-play-state: running;
-	-moz-animation-fill-mode: forwards;
-	
-	-ms-animation-name: beaverhop;
-	-ms-animation-duration: 3s;
-	-ms-animation-timing-function: ease;
-	-ms-animation-iteration-count: 1;	
-	-ms-animation-direction: normal;
-	-ms-animation-delay: 5s;
-	-ms-animation-play-state: running;
-	-ms-animation-fill-mode: forwards;
-	
-	animation-name: beaverhop;
-	animation-duration: 3s;
-	animation-timing-function: ease;
-	animation-iteration-count: 1;	
-	animation-direction: normal;
-	animation-delay: 5s;
-	animation-play-state: running;
-	animation-fill-mode: forwards;
+  -moz-animation-name: beaverhop;
+  -moz-animation-duration: 3s;
+  -moz-animation-timing-function: ease;
+  -moz-animation-iteration-count: 1;  
+  -moz-animation-direction: normal;
+  -moz-animation-delay: 5s;
+  -moz-animation-play-state: running;
+  -moz-animation-fill-mode: forwards;
+  
+  -ms-animation-name: beaverhop;
+  -ms-animation-duration: 3s;
+  -ms-animation-timing-function: ease;
+  -ms-animation-iteration-count: 1; 
+  -ms-animation-direction: normal;
+  -ms-animation-delay: 5s;
+  -ms-animation-play-state: running;
+  -ms-animation-fill-mode: forwards;
+  
+  animation-name: beaverhop;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1; 
+  animation-direction: normal;
+  animation-delay: 5s;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes beaverhop {
-	0% {
-		bottom: 0;
-		left: 25px;
-		animation-timing-function: ease-in;
-	}
-	
-	5% {
-		bottom: 85px;
-		left: 25px;
-	}
-	
-	6% {
-		bottom: 75px;
-		left: 25px;
-	}
-	
-	50% {
-		bottom: 75px;
-		left: 25px;
-	}
-	
-	75% {
-		bottom: 75px;
-		left: 25px;
-	}
-	
-	95% {
-		bottom: 75px;
-		left: 25px;
-	}
-	
-	97%{
-		bottom: 85px;
-		left: 25px;
-	}
+  0% {
+    bottom: 0;
+    left: 25px;
+    animation-timing-function: ease-in;
+  }
+  
+  5% {
+    bottom: 85px;
+    left: 25px;
+  }
+  
+  6% {
+    bottom: 75px;
+    left: 25px;
+  }
+  
+  50% {
+    bottom: 75px;
+    left: 25px;
+  }
+  
+  75% {
+    bottom: 75px;
+    left: 25px;
+  }
+  
+  95% {
+    bottom: 75px;
+    left: 25px;
+  }
+  
+  97%{
+    bottom: 85px;
+    left: 25px;
+  }
 
-	100% {
-		bottom: 0;
-		left: 25px;
-		animation-timing-function: ease-out;
-	}
-}
+  100% {
+    bottom: 0;
+    left: 25px;
+    animation-timing-function: ease-out;
+  }
+}*/
